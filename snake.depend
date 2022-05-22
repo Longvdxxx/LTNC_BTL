@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1652414123 source:f:\hk2\code\snake\snake.cpp
+	"snake.hpp"
+	"sdl_check.hpp"
+
+1651508656 f:\hk2\code\snake\snake.hpp
+	<SDL.h>
+	<deque>
+
+1651509379 f:\hk2\code\snake\sdl_check.hpp
+	<stdexcept>
+	<string>
+
+1652416617 source:f:\hk2\code\snake\main.cpp
+	"snake.hpp"
+	<iostream>
+	<stdexcept>
+
+1653150419 source:f:\hk2\code\snake - copy\main.cpp
+	"snake.hpp"
+	<iostream>
+	<stdexcept>
+
+1653150568 f:\hk2\code\snake - copy\snake.hpp
+	<SDL.h>
+	<deque>
+
+1653150396 source:f:\hk2\code\snake - copy\snake.cpp
+	"snake.hpp"
+	"sdl_check.hpp"
+	<sstream>
+	<cstdlib>
+	<ctime>
+
+1651509379 f:\hk2\code\snake - copy\sdl_check.hpp
+	<stdexcept>
+	<string>
+
+1653151386 source:f:\hk2\code\snake - copy - copy\main.cpp
+	"snake.hpp"
+	<iostream>
+	<stdexcept>
+
+1653151386 f:\hk2\code\snake - copy - copy\snake.hpp
+	<SDL.h>
+	<deque>
+
+1653191731 source:f:\hk2\code\snake - copy - copy\snake.cpp
+	"snake.hpp"
+	"sdl_check.hpp"
+	<sstream>
+	<cstdlib>
+	<ctime>
+
+1651509379 f:\hk2\code\snake - copy - copy\sdl_check.hpp
+	<stdexcept>
+	<string>
+
