@@ -196,6 +196,14 @@ void Snake::specialFruitEffect()
         SDL_FreeSurface(surfaceE);
             break;
         }
+    case 5:
+        {
+            int i= sizeof(segmentsList)/2;
+            for(int j=0;j<4;j++){
+                segmentsList.pop_back();
+                break;
+            }
+        }
      default:
         {
             break;
@@ -211,18 +219,10 @@ Snake::~Snake()
 }
 
 
-//  int Snake::startScreen()
-//  {
-//      gameStartScreen();
-//    delgameStartScreen();
-//    if (check==true) return exec();
-//    return gameStartScreen();
-//  }
 
 int Snake::exec()
 {
-//    gameStartScreen();
-//   delgameStartScreen();
+
 
    mSnake();
 
@@ -371,10 +371,10 @@ void Snake::draw()
     if (iter == std::begin(segmentsList))
     {
       if (iter->first + dx == fruitX && iter->second + dy == fruitY)//neu an fruit
-        src.x = HeadOpenMouth * 64;
+        src.x = Head * 64;
         else if(iter->first + dx == specialfruitX && iter->second + dy == specialfruitY)
         {
-            src.x = HeadOpenMouth * 64;
+            src.x = Head * 64;
         }
       else
         src.x = Head * 64;
@@ -393,7 +393,7 @@ void Snake::draw()
     }
     else if (iter + 1 == std::end(segmentsList))
     {
-      src.x = Tail * 64;
+      src.x = Body * 64;
       const auto &prevSegment = *(iter - 1);
       for (const auto &d: ds)
       {
@@ -410,17 +410,17 @@ void Snake::draw()
       const auto &prevSegment = *(iter - 1);
       if (nextSegment.first == prevSegment.first)
       {
-        src.x = Straight * 64;
+        src.x = Body * 64;
         rotate = 90;
       }
       else if (nextSegment.second == prevSegment.second)
       {
-        src.x = Straight * 64;
+        src.x = Body * 64;
         rotate = 0;
       }
       else
       {
-        src.x = Turn * 64;
+        src.x = Body * 64;
         bool up = false;
         if (segment.first == nextSegment.first && segment.second - 1 == nextSegment.second)
           up = true;

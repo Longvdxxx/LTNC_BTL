@@ -13,11 +13,8 @@ public:
   int gameStartScreen();
   int delgameStartScreen();
   int startScreen();
-  static const auto HeadOpenMouth = 0;
-  static const auto Tail = 1;
-  static const auto Turn = 2;
-  static const auto Straight = 3;
-  static const auto Head = 4;
+  static const auto Head = 0;
+  static const auto Body = 1;
   static const auto Fruit = 5;
   const static auto Width = 1280;
   const static auto Height = 720;
